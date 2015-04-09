@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- build file for lesson 2 --> 
+
+<project name="tutorial" default="build" basedir=".">
+
+	<property name="src_dir" value="${basedir}"/>
+	<property name="dest_dir" value="${basedir}/classes"/>
+
+	<target name="prep"> 
+	  <mkdir dir="${dest_dir}"/>
+	</target>
+	  
+	<target name="build" depends="prep">
+		<javac srcdir="${src_dir}" destdir="${dest_dir}">
+			<include name="**/*.java"/>
+		</javac>
+	</target> 
+</project> 

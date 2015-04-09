@@ -1,0 +1,22 @@
+INDEX VERSION 1.127+C:\JHU\PrinciplesOfEnterpriseWebDevelopment(60548182)\projects_eclipse\.metadata\.plugins\org.eclipse.jdt.core
+2595588846.index
+3296347106.index
+3823734809.index
+3235952243.index
+3164314768.index
+652051823.index
+2682825707.index
+1156929136.index
+202333492.index
+979650385.index
+2576788713.index
+1198500311.index
+1261164722.index
+3756450260.index
+2096377811.index
+2979560664.index
+1678949066.index
+2405747965.index
+1407793794.index
+1334102597.index
+1560040198.index

@@ -1,0 +1,205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 15, 2014, 9:26:39 PM
+    Author     : abu
+*/
+html
+{ height: 100%;}
+*
+{ margin: 0;
+  padding: 0;}
+body
+{ font: normal 85% Arial, Helvetica, sans-serif;
+  background: #676767  url(../images/clay_butte_06.jpg);
+  color: #000000;
+}
+p
+{ padding: 0 0 10px 0;
+  color: #FFFFFF;
+  line-height: 1.7em;
+  font-size: 100% }
+img
+{ border: 0;}
+h1, h2
+{ font: normal 175% Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #1D1D1D;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;}
+
+h2
+{ font: normal 165% Arial, Helvetica, sans-serif;}
+a
+{ color: #FFF;
+  font-weight: bold;
+  background: transparent;
+  outline: none;
+  text-decoration: underline;}
+
+a:hover
+{ text-decoration: none;}
+
+ul
+{ margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;
+  color: #FFFFFF;}
+ 
+#site, #site_header, #site_body, #site_footer
+{ margin-left: auto; 
+  margin-right: auto;}
+ 
+#site
+{ background: transparent;}
+  
+#site_header
+{ width: 960px;
+  height: 120px;
+  background: transparent;}
+ 
+#site_header H1
+{ font: normal 300% Arial, Helvetica, sans-serif;
+  letter-spacing: -3px;
+  color: #0000FF;
+  text-shadow: 1px 1px #1D1D1D;}
+#site_header H2
+{ font: normal 200% Arial, Helvetica, sans-serif;
+  letter-spacing: -2px;
+  color: #0000FF;
+  text-shadow: 1px 1px #1D1D1D;} 
+
+#site_body
+{ width: 940px;
+  padding-left: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #323232;
+  border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border: 0px 0px 15px 15px;}
+.site_body_left
+{ float: left;
+  width: 250px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;}
+
+.site_body_left_item
+{ font: normal 100% Arial, Helvetica, sans-serif;
+  width: 215px;} 
+.site_body_left h2
+{ padding: 5px 0 0 10px;
+  font: normal 140% Arial, Helvetica, sans-serif;
+  height: 30px;
+  text-shadow: 0px -1px 0px #000;
+  color: #fff;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}  
+.site_body_right
+{ width: 680px;
+  margin-bottom: 20px;
+  float: left;}
+
+.site_body_right_item
+{ width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;}
+
+.site_body_right_item_button
+{ font: normal 110% Arial, Helvetica, sans-serif;
+  height: 15px;
+  width: 90px;
+  padding: 5px 5px 10px 7px;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}
+.site_body_right_image_embed
+ { 
+  width: 100px;
+  height: 75px;
+  }
+  
+table {
+	width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f1f1c1;
+}
+tr:nth-child(odd) {
+   background-color:#ffffff;
+}
+table.names th	{
+    background-color: #c1c1c1;
+}
+ 
+#site_footer
+{ width: 960px;
+  height: 20px;
+  padding-top: 20px;
+  text-align: center; 
+  background: transparent;
+  color: #1D1D1D;
+  text-shadow: 1px 1px #FFF;}
+ 
+.hlayoutlabel{
+    float:left;
+    margin:5x;
+    
+}
+.hlayout0{
+    float:left;
+    margin:5x;
+    width:70px;
+}
+.hlayout1{
+    float:left;
+    margin:5x;
+    width:50px;
+}
+.hlayout2{
+    float:left;
+    margin:5x;
+    width:25px;
+}
+.hlayout3{
+    
+    margin:5x;
+    width:40px;
+}
+.note{ 
+    padding: 0 0 10px 0;
+    color: #0000FF;
+    line-height: 1.7em;
+    font-size: 100% }
+
+
+

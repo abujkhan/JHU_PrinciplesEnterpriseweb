@@ -1,0 +1,31 @@
+public class A {  
+  public void m1() {}  
+}  
+  
+public class B extends A {  
+  public void m1() {}  
+  public void m2() {}  
+}  
+  
+...  
+  
+A a1 = new A();  
+A a2 = new B();  
+B b1 = new A(); // compile error  
+B b2 = new B();  
+  
+a1.m1() ; // calls A.m1();  
+a1.m2(); // compile error, A does not have an m2()  
+((B)a1).m1(); // ClassCastException at runtime,   
+              // becauase a1 does not point to a B object  
+  
+a2.m1() ; // calls B.m1(), since it overrides A's version  
+a2.m2(); // compile error, A does not have an m2()  
+((B)a1).m1(); // calls B.m1(), but a totally unnecessary cast  
+((B)a1).m2(); // calls B.m2(), but if we want to  
+              // use it as a B, why did we declare it as A?  
+  
+b2.m1(); // calls B.m1(), since it overrides A's version  
+((A)b2).m1(); // calls B.m1() for the same reason.   
+              // It doesn't matter what you cast the reference to,  
+              // all that matters is the object type  

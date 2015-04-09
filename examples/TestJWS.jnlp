@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://localhost/jws/" href="TestJWS.jnlp" version="1.0">
+	<information>
+		<title>Test JWS Application</title>
+		<vendor>RFS Technologies</vendor>
+		<offline-allowed/>
+	</information>
+	<resources>
+		<j2se version="1.4+"/>
+		<jar href="package.jar"/>
+	</resources>
+	<application-desc main-class="lecture.javaSyntax.JColorChooserTest"/>
+</jnlp>

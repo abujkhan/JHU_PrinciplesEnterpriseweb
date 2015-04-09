@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Beartooth Hiking Company Tours</title>
+ 
+
+         <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="site">			<!-- site start-->
+			<div id="site_header">  <!-- site_header start-->
+				<h1>Beartooth Hiking Company (BHC)  </h1>
+			</div>
+                        <div id="site_body">
+
+                             <p>Hiking tours cost estimate: </p>
+
+         			<form action="Khan_Servlet7" name="formestimate" method="GET"   >
+                                    <p>                                                                       
+                                        <label class="hlayoutlabel">Tour Package: </label>
+                                        <select name="selectpackage" id="selectpackage" width="375" onchange="tourdays()">
+                                            <option value="Hellroaring Plateau">Hellroaring Plateau</option>
+                                             <option value="Gardiner Lake">Gardiner Lake</option>
+                                             <option value="The Beaten Path">The Beaten Path</option>
+                                         </select>
+                                    
+                                     </p> 
+                                    
+                                     <p> 
+                                    <label class="hlayoutlabel">Begin Date &nbsp;&nbsp;  </label>
+                                    <label class="hlayoutlabel">Year:</label><input class="hlayoutlabel"  width="80" id="year" type="text" name="year" maxlength="4" />
+                                    <label class="hlayoutlabel">Month:</label><input class="hlayoutlabel"  width="40" id="month" type="text" name="month" maxlength="2" />
+                                    <label class="hlayoutlabel">Day:</label><input class="hlayoutlabel"  width="40" id="day" type="text" name="day" maxlength="2"/>
+                                     </p> 
+                                    <br>
+                                     <p> 
+                                     <label class="hlayoutlabel">Duration:  </label>
+                                        <select id="selectduration" name="selectduration" width="50">
+                                            <option value="2">2</option>
+                                             <option value="3">3</option>
+                                             <option value="4">4</option>
+                                         </select>
+									
+                                      </p> 
+                                </form> 
+
+			</div>
+			<div id="site_footer">
+				Copyright &copy; Beartooth Hiking Company &nbsp;&nbsp;&nbsp; 
+			</div>
+	</div>
+	       
+<script >
+<!--
+          function tourdays(){
+			 // var packageIndex = document.formestimate.selectpackage.selectedIndex;
+			alert("Hello World!");
+			  <!-- if ((packageIndex == null) || (packageIndex == 0)) return;
+				var durationPackage = new Array;
+			  if (packageIndex == 0) {
+  
+			  durationPackage[0] = new Option("2");
+			  durationPackage[1] = new Option("3");
+			  durationPackage[2] = new Option("4");
+			 }
+			 else if  (packageIndex == 1 {
+				var durationPackage = new Array;
+			  durationPackage[0] = new Option("3");
+			  durationPackage[1] = new Option("5");
+			  
+              }
+			   else if  (packageIndex == 2 {
+				var durationPackage = new Array;
+			  durationPackage[0] = new Option("5");
+			  durationPackage[1] = new Option("7");
+			  }
+
+		for (i=document.formestimate.selectduration.options.length; i=0; i--) { 
+			document.formestimate.selectduration.options[i] = null;
+		}
+
+		  for(i=0; i<durationPackage.length; i++) {
+		  document.formestimate.selectduration.options[i] = durationPackage[i];
+		  }
+
+		document.formestimate.selectduration.options[0].selected = true;
+	
+          }
+ -->
+//-->
+</script>
+    </body>
+</html>

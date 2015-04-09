@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://abu.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://abu.com/">
+
+<xs:element name="estimate" type="tns:estimate"/>
+
+<xs:element name="estimateResponse" type="tns:estimateResponse"/>
+
+<xs:complexType name="estimate">
+<xs:sequence>
+<xs:element name="beginYear" type="xs:string" minOccurs="0"/>
+<xs:element name="beginMonth" type="xs:string" minOccurs="0"/>
+<xs:element name="beginDay" type="xs:string" minOccurs="0"/>
+<xs:element name="endYear" type="xs:string" minOccurs="0"/>
+<xs:element name="endMonth" type="xs:string" minOccurs="0"/>
+<xs:element name="endDay" type="xs:string" minOccurs="0"/>
+<xs:element name="baseRate" type="xs:string" minOccurs="0"/>
+<xs:element name="numberInParty" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estimateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

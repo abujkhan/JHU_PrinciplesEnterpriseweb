@@ -1,0 +1,6 @@
+/.cvsignore////*///
+/build.xml////*///
+/manifest.mf////*///
+D/src///////
+D/test///////
+D/nbproject///////

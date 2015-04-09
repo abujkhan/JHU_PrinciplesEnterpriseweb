@@ -1,0 +1,63 @@
+<project name="LectureCode" default="package" basedir=".">
+	<description>
+		Ant script for 605.481 lecture code
+	</description>
+	
+	<!-- Set properties used for project -->
+	<!-- Set up folder structure for a local java web start application -->
+	<property name="src" location="${basedir}"/>
+	<property name="appFolder" location="${basedir}/../LocalWebApp"/>
+	<property name="classes" location="${basedir}/classes"/>	
+
+	<!-- Make sure new directories exists before compiling -->
+	<target name="init">
+		<mkdir dir="${appFolder}"/>
+		<mkdir dir="${classes}"/>
+	</target>
+	
+	<!-- Move all other files to appropriate directories -->
+	<target name="moveFiles" depends="init">
+        <copy todir="${appFolder}">
+		  <fileset dir="${basedir}">
+		    <include name="**/*.*"/>
+		    <exclude name="**/*.java"/>
+		  </fileset>
+		</copy>
+	</target>
+
+	<!-- Now compile all java source files in directory -->
+	<target name="compile" depends="moveFiles">
+		<javac srcdir="${src}" destdir="${classes}">
+		  <!-- include all java source files under ${src} -->
+		  <!-- so it will include packaged files as well  -->
+		  <include name="**/*.java"/>
+		  <classpath>
+	          <!-- don't forget to add servlet-api.jar if -->
+		    <!-- not already in your classpath -->
+		    <pathelement path="${classes}"/>
+		  </classpath>
+		</javac>
+	</target>
+
+	<!-- Now package compiled sources into single jar file -->
+	<target name="package" depends="compile">
+		<jar destfile="package.jar" basedir="${classes}"/>
+	</target>
+	
+	<!-- option to deploy all files into root webapp -->
+	<!-- on local tomcat install -->
+	<target name="deploy" depends="compile">
+		  <copy todir="${CATHOME}/webapps/jws">
+		  <fileset dir="${appFolder}">
+		    <include name="*.jar"/>
+		    <include name="*.html"/>
+		    <include name="*.jnlp"/>
+ 		  </fileset>
+	 	</copy>
+	</target>
+
+	<!-- Option to remove class files for -->
+	<target name="clean">
+		<delete dir="${appFolder}"/>
+	</target>
+</project> 
